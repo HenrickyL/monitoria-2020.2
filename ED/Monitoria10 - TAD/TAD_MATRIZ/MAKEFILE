@@ -1,0 +1,11 @@
+all: main
+
+main: main.o Matriz.o
+	g++ main.o Matriz.o -o exe
+	
+main.o: main.cpp
+	g++ -c main.cpp
+
+Matriz.o: Matriz.cpp
+	g++ -c Matriz.cpp
+
